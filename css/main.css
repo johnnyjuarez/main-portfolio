@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Gayathri&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", sans-serif;
+}
+
+body {
+  background: #B0C0BC;
+  color: #453F3C;
+}
+
+/* header and nav styling */
+
+header h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #453F3C;
+  color: #B0C0BC;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+header nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+header nav li a {
+  transition: all 0.3s ease 0s;
+  color: #B0C0BC;
+  padding: 5px;
+  border: 1px solid #B0C0BC;
+  border-radius: 3%;
+}
+
+header nav li a:hover {
+  transition: all 0.3s ease 0s;
+  color: #453F3C;
+  border: 1px solid #453F3C;
+  background: #B0C0BC
+}
+
+li, a, button {
+  text-decoration: none;
+}
+
+section {
+  text-align: center;
+  width: 75%;
+  margin: 10% auto;
+}
+
+.section-title {
+  font-size: 2.5em;
+  margin: 5px auto;
+}
+
+/* about styling */
+
+.about {
+  line-height: 30px;
+}
+
+.about h2 {
+  margin-bottom: 5%;
+}
+
+ol {
+  list-style-position: inside;
+}
+
+.about h3 {
+  margin: 5% auto;
+}
+
+.about h4 {
+  margin: 5% auto;
+}
+
+.intro {
+  font-size: 32px;
+  margin-bottom: 5%;
+  line-height: 40px;
+}
+
+hr {
+  margin: 5% auto;
+  border: none;
+  height: 50px;
+  border-bottom: 1px solid #1f1209;
+  box-shadow: 0 20px 20px -20px #333;
+}
+
+p {
+  font-family: 'Gayathri', sans-serif;
+  font-size: 1.25em;
+}
+
+/* skills styling */
+
+.skills ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  align-items: space-between;
+  list-style: none;
+  line-height: 30px;
+  background-color: #453F3C;
+  color: #B0C0BC;
+  box-shadow: 5px 10px 14px 8px rgba(0, 0, 0, 0.75);
+}
+
+/* projects styling */
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-card {
+  background: #A7A7A9;
+  padding: 20px 20px;
+  margin-top: 10%;
+  box-shadow: 5px 10px 14px 8px rgba(0, 0, 0, 0.75);
+}
+
+.card-body a:last-child {
+  margin-left: 50px;
+}
+
+.card-body a {
+  transition: all 0.3s ease 0s;
+  color: #453F3C
+}
+
+.card-body a:hover {
+  transition: all 0.3s ease 0s;
+  color: #fff;
+}
+
+.project-card ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  text-decoration: underline;
+}
+
+.project-card img {
+  width: 75%;
+}
+
+/* contact styling */
+
+.contact ul {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact li {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.contact li a {
+  transition: all 0.3s ease 0s;
+  color: #453F3C;
+}
+
+.contact li a:hover {
+  transition: all 0.3s ease 0s;
+  color: #fff;
+  text-shadow: 5px 2px 4px rgba(150, 150, 150, 1);
+}
+
+/* form styling */
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-top: 20px;
+}
+
+form label {
+  margin-top: 15px;
+}
+
+input, textarea {
+  border-radius: 1.5%;
+  outline: none;
+  transition: all 0.3s ease 0s;
+}
+
+input[type=text], input[type=email] {
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+}
+
+input[type=submit] {
+  margin-top: 10px;
+  width: 25%;
+  height: 30px;
+  border: none;
+  border-radius: 1.5%;
+  background-color: #453F3C;
+  color: #B0C0BC;
+}
+
+input[type=submit]:active {
+  background-color: #B0C0BC;
+  color: #453F3C;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  border: 3px solid #453F3C;
+}
+
+/* footer styling */
+
+footer {
+  background: #453F3C;
+  color: #B0C0BC;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 0.5em;
+}
+
+/* media queries for desktop */
+
+@media all and (min-width: 800px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  header h1 {
+    margin-left: 20px;
+  }
+  section {
+    width: 50%;
+  }
+  .project-cards {
+    flex-wrap: nowrap;
+  }
+}

@@ -136,13 +136,21 @@ p {
   box-shadow: 5px 10px 14px 8px rgba(0, 0, 0, 0.75);
 }
 
+.card-title {
+  color: #181615;
+}
+
 .card-body a:last-child {
   margin-left: 50px;
 }
 
 .card-body a {
   transition: all 0.3s ease 0s;
-  color: #453F3C
+  color: #181615
+}
+
+.card-body p {
+  color: #181615;
 }
 
 .card-body a:hover {

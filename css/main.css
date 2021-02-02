@@ -186,6 +186,12 @@ p {
   text-shadow: 5px 2px 4px rgba(150, 150, 150, 1);
 }
 
+.flex-link {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+}
+
 /* form styling */
 
 form {
